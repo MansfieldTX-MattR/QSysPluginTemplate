@@ -89,7 +89,7 @@ function ParseResponse()
   if DebugFunction then print("ParseResponse() Called") end
   -- Entire buffer is set to newrx here
   rx = Device:Read(Device.BufferLength)
-  while rx do 
+  while rx do
     if DebugRx then print("Rx: "..rx) end
   end
 end
